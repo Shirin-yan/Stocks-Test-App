@@ -12,6 +12,8 @@
 		C02F5E1C2AE02706002ED777 /* PreloaderVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E1B2AE02706002ED777 /* PreloaderVM.swift */; };
 		C02F5E1E2AE02A48002ED777 /* RoundedRectProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E1D2AE02A48002ED777 /* RoundedRectProgressViewStyle.swift */; };
 		C02F5E212AE02C44002ED777 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E202AE02C44002ED777 /* MainView.swift */; };
+		C02F5E232AE02D1E002ED777 /* TradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E222AE02D1E002ED777 /* TradeView.swift */; };
+		C02F5E252AE02D25002ED777 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E242AE02D25002ED777 /* TopView.swift */; };
 		C03855812AE01B9C00AEACDB /* StocksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03855802AE01B9C00AEACDB /* StocksApp.swift */; };
 		C03855832AE01B9C00AEACDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03855822AE01B9C00AEACDB /* ContentView.swift */; };
 		C03855852AE01B9D00AEACDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03855842AE01B9D00AEACDB /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 		C02F5E1B2AE02706002ED777 /* PreloaderVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderVM.swift; sourceTree = "<group>"; };
 		C02F5E1D2AE02A48002ED777 /* RoundedRectProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectProgressViewStyle.swift; sourceTree = "<group>"; };
 		C02F5E202AE02C44002ED777 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C02F5E222AE02D1E002ED777 /* TradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeView.swift; sourceTree = "<group>"; };
+		C02F5E242AE02D25002ED777 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		C038557D2AE01B9C00AEACDB /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03855802AE01B9C00AEACDB /* StocksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApp.swift; sourceTree = "<group>"; };
 		C03855822AE01B9C00AEACDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 			children = (
 				C02F5E192AE02697002ED777 /* PreloaderView.swift */,
 				C02F5E202AE02C44002ED777 /* MainView.swift */,
+				C02F5E222AE02D1E002ED777 /* TradeView.swift */,
+				C02F5E242AE02D25002ED777 /* TopView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,7 +207,9 @@
 				C02F5E142AE0256E002ED777 /* Color.swift in Sources */,
 				C02F5E1E2AE02A48002ED777 /* RoundedRectProgressViewStyle.swift in Sources */,
 				C03855812AE01B9C00AEACDB /* StocksApp.swift in Sources */,
+				C02F5E232AE02D1E002ED777 /* TradeView.swift in Sources */,
 				C02F5E1C2AE02706002ED777 /* PreloaderVM.swift in Sources */,
+				C02F5E252AE02D25002ED777 /* TopView.swift in Sources */,
 				C02F5E1A2AE02697002ED777 /* PreloaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

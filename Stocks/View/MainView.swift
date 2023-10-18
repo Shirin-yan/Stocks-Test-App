@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var selectedIndex = 0
+
     var body: some View {
-        Text("Hello, World!")
+        TabView(selection: $selectedIndex) {
+            TradeView()
+                .tabItem({
+                    Label("Trade", systemImage: "chart.bar.fill")
+                })
+                .tag(0)
+            
+            TopView()
+                .tabItem({
+                    Label("Top", systemImage: "person.fill")
+                })
+                .tag(1)
+        }.background(Color.bg)
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .preferredColorScheme(.dark)
     }
 }
