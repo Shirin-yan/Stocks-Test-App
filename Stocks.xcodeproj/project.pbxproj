@@ -14,6 +14,13 @@
 		C02F5E212AE02C44002ED777 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E202AE02C44002ED777 /* MainView.swift */; };
 		C02F5E232AE02D1E002ED777 /* TradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E222AE02D1E002ED777 /* TradeView.swift */; };
 		C02F5E252AE02D25002ED777 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E242AE02D25002ED777 /* TopView.swift */; };
+		C02F5E282AE02FA4002ED777 /* TopVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E272AE02FA4002ED777 /* TopVM.swift */; };
+		C02F5E2A2AE02FAB002ED777 /* TradeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E292AE02FAB002ED777 /* TradeVM.swift */; };
+		C02F5E2C2AE02FBF002ED777 /* CurrencyPairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E2B2AE02FBF002ED777 /* CurrencyPairView.swift */; };
+		C02F5E2E2AE02FC9002ED777 /* CurrencyPairVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E2D2AE02FC9002ED777 /* CurrencyPairVM.swift */; };
+		C02F5E302AE03162002ED777 /* Trader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E2F2AE03162002ED777 /* Trader.swift */; };
+		C02F5E322AE0355F002ED777 /* TraderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E312AE0355F002ED777 /* TraderItemView.swift */; };
+		C02F5E342AE04027002ED777 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E332AE04027002ED777 /* Collection.swift */; };
 		C03855812AE01B9C00AEACDB /* StocksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03855802AE01B9C00AEACDB /* StocksApp.swift */; };
 		C03855832AE01B9C00AEACDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03855822AE01B9C00AEACDB /* ContentView.swift */; };
 		C03855852AE01B9D00AEACDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03855842AE01B9D00AEACDB /* Assets.xcassets */; };
@@ -29,6 +36,13 @@
 		C02F5E202AE02C44002ED777 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C02F5E222AE02D1E002ED777 /* TradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeView.swift; sourceTree = "<group>"; };
 		C02F5E242AE02D25002ED777 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		C02F5E272AE02FA4002ED777 /* TopVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopVM.swift; sourceTree = "<group>"; };
+		C02F5E292AE02FAB002ED777 /* TradeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeVM.swift; sourceTree = "<group>"; };
+		C02F5E2B2AE02FBF002ED777 /* CurrencyPairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairView.swift; sourceTree = "<group>"; };
+		C02F5E2D2AE02FC9002ED777 /* CurrencyPairVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairVM.swift; sourceTree = "<group>"; };
+		C02F5E2F2AE03162002ED777 /* Trader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trader.swift; sourceTree = "<group>"; };
+		C02F5E312AE0355F002ED777 /* TraderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraderItemView.swift; sourceTree = "<group>"; };
+		C02F5E332AE04027002ED777 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		C038557D2AE01B9C00AEACDB /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03855802AE01B9C00AEACDB /* StocksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApp.swift; sourceTree = "<group>"; };
 		C03855822AE01B9C00AEACDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				C02F5E132AE0256E002ED777 /* Color.swift */,
+				C02F5E332AE04027002ED777 /* Collection.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -63,6 +78,7 @@
 				C02F5E202AE02C44002ED777 /* MainView.swift */,
 				C02F5E222AE02D1E002ED777 /* TradeView.swift */,
 				C02F5E242AE02D25002ED777 /* TopView.swift */,
+				C02F5E2B2AE02FBF002ED777 /* CurrencyPairView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -70,6 +86,7 @@
 		C02F5E172AE0267E002ED777 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C02F5E2F2AE03162002ED777 /* Trader.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -78,6 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				C02F5E1B2AE02706002ED777 /* PreloaderVM.swift */,
+				C02F5E292AE02FAB002ED777 /* TradeVM.swift */,
+				C02F5E272AE02FA4002ED777 /* TopVM.swift */,
+				C02F5E2D2AE02FC9002ED777 /* CurrencyPairVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -86,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C02F5E1D2AE02A48002ED777 /* RoundedRectProgressViewStyle.swift */,
+				C02F5E312AE0355F002ED777 /* TraderItemView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -109,11 +130,11 @@
 		C038557F2AE01B9C00AEACDB /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				C02F5E152AE02664002ED777 /* Extentions */,
 				C02F5E1F2AE02C2F002ED777 /* CustomViews */,
 				C02F5E172AE0267E002ED777 /* Model */,
 				C02F5E162AE02678002ED777 /* View */,
 				C02F5E182AE02683002ED777 /* ViewModel */,
-				C02F5E152AE02664002ED777 /* Extentions */,
 				C038558E2AE01C9C00AEACDB /* Launch Screen.storyboard */,
 				C03855842AE01B9D00AEACDB /* Assets.xcassets */,
 				C03855802AE01B9C00AEACDB /* StocksApp.swift */,
@@ -203,11 +224,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C03855832AE01B9C00AEACDB /* ContentView.swift in Sources */,
+				C02F5E302AE03162002ED777 /* Trader.swift in Sources */,
 				C02F5E212AE02C44002ED777 /* MainView.swift in Sources */,
+				C02F5E2E2AE02FC9002ED777 /* CurrencyPairVM.swift in Sources */,
+				C02F5E282AE02FA4002ED777 /* TopVM.swift in Sources */,
+				C02F5E342AE04027002ED777 /* Collection.swift in Sources */,
+				C02F5E2C2AE02FBF002ED777 /* CurrencyPairView.swift in Sources */,
 				C02F5E142AE0256E002ED777 /* Color.swift in Sources */,
 				C02F5E1E2AE02A48002ED777 /* RoundedRectProgressViewStyle.swift in Sources */,
+				C02F5E2A2AE02FAB002ED777 /* TradeVM.swift in Sources */,
 				C03855812AE01B9C00AEACDB /* StocksApp.swift in Sources */,
 				C02F5E232AE02D1E002ED777 /* TradeView.swift in Sources */,
+				C02F5E322AE0355F002ED777 /* TraderItemView.swift in Sources */,
 				C02F5E1C2AE02706002ED777 /* PreloaderVM.swift in Sources */,
 				C02F5E252AE02D25002ED777 /* TopView.swift in Sources */,
 				C02F5E1A2AE02697002ED777 /* PreloaderView.swift in Sources */,

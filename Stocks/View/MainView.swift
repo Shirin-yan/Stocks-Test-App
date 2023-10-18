@@ -10,6 +10,10 @@ import SwiftUI
 struct MainView: View {
     @State var selectedIndex = 0
 
+    init() {
+        UITabBar.appearance().isTranslucent = false
+    }
+    
     var body: some View {
         TabView(selection: $selectedIndex) {
             TradeView()
@@ -23,7 +27,7 @@ struct MainView: View {
                     Label("Top", systemImage: "person.fill")
                 })
                 .tag(1)
-        }.background(Color.bg)
+        }.background(Color.bg.ignoresSafeArea())
     }
 }
 
