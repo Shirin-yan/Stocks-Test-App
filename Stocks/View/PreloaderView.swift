@@ -9,11 +9,10 @@ import SwiftUI
 
 struct PreloaderView: View {
     @StateObject var vm = PreloaderVM()
-    @State var fullyLoaded = false
     
     var body: some View {
         ZStack {
-            NavigationLink("", destination: MainView(), isActive: $fullyLoaded)
+            NavigationLink("", destination: MainView().navigationBarBackButtonHidden(), isActive: $vm.fullyLoaded)
 
             VStack {
                 Circle()
@@ -31,9 +30,8 @@ struct PreloaderView: View {
                 .progressViewStyle(RoundedRectProgressViewStyle())
                 .tint(Color.customGreen)
                 .padding(.horizontal, 40)
-        }.onChange(of: vm.progress, perform: { newValue in
-            fullyLoaded = newValue == 1
-        }).onAppear(perform: vm.startProgress)
+        }.onAppear(perform: vm.startProgress)
+            .onDisappear(perform: vm.invalidate)
     }
 }
 

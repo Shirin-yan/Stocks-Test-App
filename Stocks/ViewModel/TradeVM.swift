@@ -8,5 +8,7 @@
 import Foundation
 
 class TradeVM: ObservableObject {
-    
+    @Published var pair = CurrencyPair(symbol: "GPB", currency: "USD")
+    @Published var duration = 1
+    @Published var investment = 100
 }

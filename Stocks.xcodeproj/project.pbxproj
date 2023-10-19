@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01F293C2AE0614C00606E89 /* CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F293B2AE0614C00606E89 /* CurrencyPair.swift */; };
+		C01F293E2AE0649200606E89 /* DurationTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F293D2AE0649200606E89 /* DurationTextFieldView.swift */; };
+		C01F29562AE1105400606E89 /* InvestmentTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F29552AE1105400606E89 /* InvestmentTextFieldView.swift */; };
+		C01F29582AE1347000606E89 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F29572AE1347000606E89 /* NumberFormatter.swift */; };
 		C02F5E142AE0256E002ED777 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E132AE0256E002ED777 /* Color.swift */; };
 		C02F5E1A2AE02697002ED777 /* PreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E192AE02697002ED777 /* PreloaderView.swift */; };
 		C02F5E1C2AE02706002ED777 /* PreloaderVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F5E1B2AE02706002ED777 /* PreloaderVM.swift */; };
@@ -26,9 +30,14 @@
 		C03855852AE01B9D00AEACDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03855842AE01B9D00AEACDB /* Assets.xcassets */; };
 		C03855882AE01B9D00AEACDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03855872AE01B9D00AEACDB /* Preview Assets.xcassets */; };
 		C038558F2AE01C9D00AEACDB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C038558E2AE01C9C00AEACDB /* Launch Screen.storyboard */; };
+		C0EE13AF2AE161D5001AA586 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EE13AE2AE161D5001AA586 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01F293B2AE0614C00606E89 /* CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPair.swift; sourceTree = "<group>"; };
+		C01F293D2AE0649200606E89 /* DurationTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationTextFieldView.swift; sourceTree = "<group>"; };
+		C01F29552AE1105400606E89 /* InvestmentTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentTextFieldView.swift; sourceTree = "<group>"; };
+		C01F29572AE1347000606E89 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
 		C02F5E132AE0256E002ED777 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C02F5E192AE02697002ED777 /* PreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderView.swift; sourceTree = "<group>"; };
 		C02F5E1B2AE02706002ED777 /* PreloaderVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderVM.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		C03855842AE01B9D00AEACDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03855872AE01B9D00AEACDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C038558E2AE01C9C00AEACDB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C0EE13AE2AE161D5001AA586 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 			children = (
 				C02F5E132AE0256E002ED777 /* Color.swift */,
 				C02F5E332AE04027002ED777 /* Collection.swift */,
+				C01F29572AE1347000606E89 /* NumberFormatter.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -79,6 +90,7 @@
 				C02F5E222AE02D1E002ED777 /* TradeView.swift */,
 				C02F5E242AE02D25002ED777 /* TopView.swift */,
 				C02F5E2B2AE02FBF002ED777 /* CurrencyPairView.swift */,
+				C0EE13AE2AE161D5001AA586 /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				C02F5E2F2AE03162002ED777 /* Trader.swift */,
+				C01F293B2AE0614C00606E89 /* CurrencyPair.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +120,8 @@
 			children = (
 				C02F5E1D2AE02A48002ED777 /* RoundedRectProgressViewStyle.swift */,
 				C02F5E312AE0355F002ED777 /* TraderItemView.swift */,
+				C01F293D2AE0649200606E89 /* DurationTextFieldView.swift */,
+				C01F29552AE1105400606E89 /* InvestmentTextFieldView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -224,11 +239,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C03855832AE01B9C00AEACDB /* ContentView.swift in Sources */,
+				C01F29582AE1347000606E89 /* NumberFormatter.swift in Sources */,
 				C02F5E302AE03162002ED777 /* Trader.swift in Sources */,
 				C02F5E212AE02C44002ED777 /* MainView.swift in Sources */,
 				C02F5E2E2AE02FC9002ED777 /* CurrencyPairVM.swift in Sources */,
 				C02F5E282AE02FA4002ED777 /* TopVM.swift in Sources */,
+				C0EE13AF2AE161D5001AA586 /* WebView.swift in Sources */,
 				C02F5E342AE04027002ED777 /* Collection.swift in Sources */,
+				C01F293E2AE0649200606E89 /* DurationTextFieldView.swift in Sources */,
 				C02F5E2C2AE02FBF002ED777 /* CurrencyPairView.swift in Sources */,
 				C02F5E142AE0256E002ED777 /* Color.swift in Sources */,
 				C02F5E1E2AE02A48002ED777 /* RoundedRectProgressViewStyle.swift in Sources */,
@@ -237,6 +255,8 @@
 				C02F5E232AE02D1E002ED777 /* TradeView.swift in Sources */,
 				C02F5E322AE0355F002ED777 /* TraderItemView.swift in Sources */,
 				C02F5E1C2AE02706002ED777 /* PreloaderVM.swift in Sources */,
+				C01F29562AE1105400606E89 /* InvestmentTextFieldView.swift in Sources */,
+				C01F293C2AE0614C00606E89 /* CurrencyPair.swift in Sources */,
 				C02F5E252AE02D25002ED777 /* TopView.swift in Sources */,
 				C02F5E1A2AE02697002ED777 /* PreloaderView.swift in Sources */,
 			);

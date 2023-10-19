@@ -21,6 +21,7 @@ struct RoundedRectProgressViewStyle: ProgressViewStyle {
                 .foregroundColor(.customGreen)
             
             Text("\(Int((configuration.fractionCompleted ?? 0.1)*100))%")
+                .foregroundStyle(.white)
                 .font(.system(size: 16, weight: .black))
                 .frame(maxWidth: .infinity, alignment: .center)
         }

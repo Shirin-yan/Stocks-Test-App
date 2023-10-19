@@ -13,7 +13,7 @@ struct StocksApp: App {
         WindowGroup {
             NavigationView {
                 PreloaderView()
-            }
+            }.preferredColorScheme(.dark)
         }
     }
 }
