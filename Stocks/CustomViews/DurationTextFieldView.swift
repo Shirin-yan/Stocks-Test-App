@@ -32,6 +32,7 @@ struct DurationTextFieldView: View {
                     text: $time
                 ).focused($isFocused)
                     .textContentType(.dateTime)
+                    .keyboardType(.numberPad)
                     .multilineTextAlignment(.center)
                     .onChange(of: isFocused) { isFocused in
                         borderColor = isFocused ? .customGreen : .darkBlue
@@ -80,8 +81,8 @@ struct DurationTextFieldView: View {
     }
     
     func getSeconds() -> Int {
-        var seconds = Int(time.components(separatedBy: ":").last ?? "") ?? 0
-        var minutes = Int(time.components(separatedBy: ":").first ?? "") ?? 0
+        let seconds = Int(time.components(separatedBy: ":").last ?? "") ?? 0
+        let minutes = Int(time.components(separatedBy: ":").first ?? "") ?? 0
         return minutes*60+seconds
     }
 }

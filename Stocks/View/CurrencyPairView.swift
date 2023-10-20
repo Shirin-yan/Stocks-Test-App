@@ -34,7 +34,7 @@ struct CurrencyPairView: View {
                             .cornerRadius(10)
                     }.padding(.horizontal, 10)
                 }
-            }).padding(.horizontal, 10)
+            }).padding(10)
         }.onAppear(perform: vm.generateData)
             .background(Color.bg.ignoresSafeArea())
             .navigationTitle("Currency Pair")

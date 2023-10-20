@@ -9,7 +9,9 @@ import SwiftUI
 
 struct TradeView: View {
     @StateObject var vm = TradeVM()
-    
+    @State var soldAlertPresented = false
+    @State var boughtAlertPresented = false
+
     var body: some View {
         VStack {
             Text("Top Traders")
@@ -59,7 +61,7 @@ struct TradeView: View {
             
             HStack {
                 Button {
-                    
+                    soldAlertPresented.toggle()
                 } label: {
                     Text("Sell")
                         .foregroundColor(.white)
@@ -67,10 +69,12 @@ struct TradeView: View {
                         .frame(maxWidth: .infinity, minHeight: 54)
                         .background(Color.customRed)
                         .cornerRadius(12)
-                }
+                }.alert(isPresented: $soldAlertPresented, content: {
+                    Alert(title: Text("Sold"), message: Text("Sold successfully"))
+                })
                 
                 Button {
-                    
+                    boughtAlertPresented.toggle()
                 } label: {
                     Text("Buy")
                         .foregroundColor(.white)
@@ -78,7 +82,9 @@ struct TradeView: View {
                         .frame(maxWidth: .infinity, minHeight: 54)
                         .background(Color.customGreen)
                         .cornerRadius(12)
-                }
+                }.alert(isPresented: $boughtAlertPresented, content: {
+                    Alert(title: Text("Bought"), message: Text("Bought successfully"))
+                })
             }
         }.padding(20)
             .scrollDismissesKeyboard(.immediately)

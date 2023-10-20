@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InvestmentTextFieldView: View {
     @FocusState private var isFocused: Bool
-    @State private var price = 1
+    @State private var price = 1000
     @State var borderColor = Color.darkBlue
     
     var body: some View {
@@ -31,6 +31,7 @@ struct InvestmentTextFieldView: View {
                     value: $price,
                     formatter: NumberFormatter.currency
                 ).focused($isFocused)
+                    .keyboardType(.numberPad)
                     .multilineTextAlignment(.center)
                     .onChange(of: isFocused) { isFocused in
                         borderColor = isFocused ? .customGreen : .darkBlue
